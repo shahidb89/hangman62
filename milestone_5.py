@@ -104,8 +104,7 @@ def play_game(word_list):
             print("Congragulations. You won the game!")
             break
 
-word_list = ["apple", "banana", "orange", "plum", "peach"]
-
-
-play_game(word_list)
+if __name__ == '__main__':
+    word_list = ["apple", "banana", "orange", "plum", "peach"]
+    play_game(word_list)
 
