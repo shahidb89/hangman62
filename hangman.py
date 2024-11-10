@@ -1,7 +1,8 @@
+#!/usr/bin/env python3
 import random
 class Hangman:
-     '''
-     """
+     
+    """
     A class to represent the Hangman game.
 
     Attributes
@@ -20,8 +21,8 @@ class Hangman:
         The list of words give to the computer to randomly choose from.
     list_of_guesses : list of single letter str
         The list of single letter guesses made by the player.
-    '''
-    def __init__(self, word_list, num_lives=5):
+    """
+    def __init__(self, word_list, num_lives):
         """
         See help(Hangman) for accurate signature.
         """
@@ -57,6 +58,7 @@ class Hangman:
         else:
             self.num_lives -= 1 
             print(f'Sorry, {guess} is not in the word.')
+            print(self.word_guessed)
             print(f'You have {self.num_lives} lives lseft')
 
 
@@ -90,6 +92,12 @@ def play_game(word_list):
     ------
     str
         Game result, indicating if the player won or lost.
+
+    Bonus!
+    
+    ------
+
+    Feel free to play with the num_lives variable to get more exciting experience.
     """
     num_lives = 5
     game = Hangman(word_list, num_lives)
@@ -99,12 +107,14 @@ def play_game(word_list):
             break
         elif game.num_letters > 0:
              game.ask_for_input()
-             print(game.word_guesseda)
+             print(game.word_guessed)
         else:
             print("Congragulations. You won the game!")
             break
 
 if __name__ == '__main__':
+    # You can edit or extend the word_list to get more exciting experience. 
     word_list = ["apple", "banana", "orange", "plum", "peach"]
+
     play_game(word_list)
 
