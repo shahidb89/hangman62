@@ -9,10 +9,14 @@ Hangman is a classic game in which a player thinks of a word and the other playe
 This is an implementation of the Hangman game, where the computer thinks of a word and the user tries to guess it. 
 
 ## Usage Instructions
-To Run the game, ensure you have Python 3 installed. Download the milestone_5.py file and execute the script in the Command Line Terminal as the following:
+To Run the game, ensure you have Python 3 installed. Download the hangman.py file and execute the script in the Command Line Terminal as the following:
 
 ```bash
-python hangman_game.py
+python hangman.py
+
+or 
+
+./hangman.py
 ```
 
 Otherwise, you can open the file, or copy the scripts to a Jupyter Notebook and run the code.
